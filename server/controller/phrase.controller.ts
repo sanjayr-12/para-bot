@@ -1,7 +1,7 @@
 import model from "../gemini/config.ts";
 import { Request, Response } from "npm:express";
 
-export const testGen = async (req: Request, res: Response) => {
+export const phraseText = async (req: Request, res: Response) => {
   try {
     const { prompt } = req.body;
     const result = await model.generateContent(prompt);
